@@ -8,8 +8,14 @@
 </head>
 <body>
     <script>
-        let tv={size:43, Brand:"sony",cost=40000,pixel=441};
+        let tv={
+            size:43, Brand:"sony",cost=40000 , pixel=441,
+            fullname: function() {
+                return this.Brand + "oled" + this.pixel;
+            }
+        };
         console.log(tv.Brand);
+        console.log(tv.fullname());
     </script>
     
 </body>
